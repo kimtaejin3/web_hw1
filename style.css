@@ -1,0 +1,133 @@
+.d-none {
+  display: none;
+}
+
+.title {
+  font-family: "black han sans";
+  font-size: 70px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header {
+  height: 29px;
+  margin-bottom: 20px;
+}
+
+.write-btn {
+  float: left;
+  overflow: hidden;
+}
+
+.labels {
+  float: right;
+  /* margin-right: 400px; */
+  margin-right: 100px;
+  overflow: hidden;
+}
+
+.field {
+  float: left;
+  width: 100%;
+}
+
+i {
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+}
+
+th {
+}
+
+td {
+  height: 80px;
+  cursor: pointer;
+}
+
+.even td {
+  background-color: #eeeeee;
+}
+
+.right {
+  color: white;
+  background-color: rgba(79, 118, 204, 0.2);
+}
+
+button {
+  border: 1px solid;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.label {
+  margin: 5px;
+  padding: 5px;
+  border: 1px groove #e7e7e7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right .label {
+  color: white;
+  cursor: pointer;
+}
+
+.todo {
+  color: rgba(57, 206, 180, 1);
+}
+.confer {
+  color: rgba(255, 99, 71, 1);
+}
+.idea {
+  color: rgba(79, 118, 219, 1);
+}
+.shop {
+  color: rgba(149, 165, 166, 1);
+}
+
+.diary {
+  padding: 30px;
+  width: 320px;
+  height: 380px;
+  border: 2px ridge;
+  border-radius: 5px;
+  position: absolute;
+  top: 80px;
+  left: 90px;
+}
+
+.create {
+  background-color: lightskyblue;
+}
+
+.update {
+  background-color: rosybrown;
+}
+
+.icons {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.update input {
+}
+
+.btns {
+  margin-top: 30px;
+}

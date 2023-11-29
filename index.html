@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    >
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <div class="diary create d-none">
+      <label for="create-title">제목 :</label>
+      <input type="text" id="create-title" >
+      <br >
+      <br >
+      <div>
+        <label for="create-description">설명 :</label>
+        <br >
+        <textarea id="create-description" rows="5" cols="30"></textarea>
+      </div>
+      <br >
+      <label for="classify">분류 :</label>
+      <select id="create-select">
+        <option id="created-select" value="todo">할일</option>
+        <option id="created-select" value="confer">회의</option>
+        <option id="created-select" value="idea">아이디어</option>
+        <option id="created-select" value="shop">쇼핑</option>
+      </select>
+      <br>
+      <br>
+      <button id="create-store">저장</button>
+      <button id="create-cancel">취소</button>
+    </div>
+
+    <div class="diary update d-none">
+      <div class="icons">
+        <i class="material-icons" id="update-edit">mode_edit</i>
+        <i class="material-icons" id="update-delete">delete</i>
+        <i class="material-icons" id="update-close">close</i>
+      </div>
+      <label for="update-title">제목 :</label>
+      <input type="text" id="update-title" >
+      <br >
+      <br >
+      <div>
+        <label for="update-description">설명 :</label>
+        <br >
+        <textarea id="update-description" rows="5" cols="30"></textarea>
+      </div>
+      <br >
+      <label for="classify">분류 :</label>
+      <select id="update-select">
+        <option id="update-select" value="todo">할일</option>
+        <option id="update-select" value="confer">회의</option>
+        <option id="update-select" value="idea">아이디어</option>
+        <option id="update-select" value="shop">쇼핑</option>
+      </select>
+
+      <div class="btns d-none">
+        <button id="update-store">저장</button>
+        <button id="update-cancel">취소</button>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">나의 일지</h1>
+      <div class="header">
+        <button class="write-btn">일지 작성하기</button>
+        <div class="labels">
+          <input id="todo" type="checkbox" >
+          <label class="todo" for="todo">할일</label>
+          <input id="confer" type="checkbox" >
+          <label class="confer" for="confer">회의</label>
+          <input id="idea" type="checkbox" >
+          <label class="idea" for="idea">아이디어</label>
+          <input id="shop" type="checkbox" >
+          <label class="shop" for="shop">쇼핑목록</label>
+        </div>
+      </div>
+
+      <div class="field row">
+        <div class="col-lg-9">
+          <table class="table">
+            <tr>
+              <th>SUN</th>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+            </tr>
+            <tr>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+            </tr>
+            <tr class="even">
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+            </tr>
+            <tr>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+            </tr>
+            <tr class="even">
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+            </tr>
+            <tr>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+              <td><ul></ul></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-lg-3 right"></div>
+      </div>
+      <!-- container  -->
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
